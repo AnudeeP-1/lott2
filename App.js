@@ -18,6 +18,10 @@ import SignIn from "./signIneg/SignIn";
 import Home from "./signIneg/Home";
 import PasswordLess from "./signIneg/PasswordLess";
 import Phone from "./signIneg/PhoneSignIn";
+import PhoneScreen from './src/phoneAuth/PhoneScreen';
+import OTPScreen from './src/phoneAuth/OTPScreen';
+import SuccessScreen from './src/phoneAuth/SuccessScreen';
+import TestExpo from './src/phoneAuth/testexpo';
 
 const Stack = createStackNavigator();
 
@@ -41,11 +45,17 @@ export default class App extends Component {
           <Stack.Screen name="Card1" component={Card1} />
           <Stack.Screen name="Card2" component={Card2} />
           <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="PasswordLess" component={PasswordLess} /> */}
-          <Stack.Screen name="Phone" component={Phone} />
+          {/* <Stack.Screen name="Phone" component={Phone} /> */}
+          {/* <Stack.Screen name="PhoneScreen" component={PhoneScreen} /> */}
+          <Stack.Screen name="TestExpo" component={TestExpo} />
+          <Stack.Screen name="OTP Screen" component={OTPScreen} />
+          <Stack.Screen name="successScreen" component={SuccessScreen} />
           <Stack.Screen name="SignIn" component={SignIn} />
           <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator>
+        {/* 419125392151-ue9h7m6iqunqmnpa1bjamvu5kj39m7rr.apps.googleusercontent.com */}
       </NavigationContainer>
     );
   }
